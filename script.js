@@ -9,7 +9,7 @@ const archetypes = {
         description: "You're the type who measures a good trip by how rested you feel afterwards. Slow mornings with coffee by the water, sunset views without a packed schedule, and plenty of time to just *be* — that's your sweet spot. You don't need every hour planned; you need space to breathe. A good book, warm sand, and zero FOMO is your ideal vacation state.",
         idealTrip: "A 5-day beach escape in Zanzibar with sunset dhow cruises, snorkeling at your own pace, beachfront dinners, and plenty of unscheduled time to nap, read, or stare at the ocean.",
         ctaText: "Ready to trade your to-do list for a beach towel? Join our next slow-travel beach escape designed for people who actually want to relax.",
-        ctaButton: "Show me beach trips"
+        ctaButton: "Join a group trip with Xcursions.ng"
     },
     city: {
         name: "The Culture City Explorer",
@@ -18,7 +18,7 @@ const archetypes = {
         description: "You're happiest wandering through local markets, trying street food you can't pronounce, and getting lost in neighborhoods tourists skip. Museums, walking tours, late-night food spots, rooftop bars — you want to *feel* a city, not just see it. You travel to learn, taste, and connect with the heartbeat of a place. Cookie-cutter itineraries bore you; you want the real thing.",
         idealTrip: "A 6-day cultural immersion in Marrakech with guided medina tours, cooking classes, traditional hammam experiences, rooftop dinners, and curated local encounters.",
         ctaText: "Want trips that go beyond the Instagram spots? Join our next city adventure built for curious explorers who care about culture, not just check-ins.",
-        ctaButton: "Explore city trips"
+        ctaButton: "Join a group trip with Xcursions.ng"
     },
     adventure: {
         name: "The Adrenaline Adventurer",
@@ -27,7 +27,7 @@ const archetypes = {
         description: "If it doesn't get your heart racing, it's not worth the flight. You're the first to sign up for the hike, the zip-line, the quad bike, the cliff jump. You don't mind waking up early, getting a little dirty, or feeling sore the next day — that's proof you actually *did* something. You want stories you can't get from a resort. Adventure is the whole point.",
         idealTrip: "A 7-day adrenaline-packed experience in Uganda with white-water rafting on the Nile, gorilla trekking, bungee jumping, and quad biking through rural villages.",
         ctaText: "If you're tired of boring vacations, join our next adventure trip. Real activities. Real stories. No fluff.",
-        ctaButton: "Find my next adventure"
+        ctaButton: "Join a group trip with Xcursions.ng"
     },
     wellness: {
         name: "The Nature & Wellness Seeker",
@@ -36,7 +36,7 @@ const archetypes = {
         description: "Mountains over beaches. Silence over nightlife. You're looking for space to think, breathe, and reset. Whether it's yoga at sunrise, long walks through forests, or journaling by a lake, you want your trip to feel intentional. Screens off. Mind clear. You're not running from life — you're creating room to come back to it better.",
         idealTrip: "A 5-day wellness retreat in the Rwandan highlands with morning yoga, guided nature walks, meditation sessions, farm-to-table meals, and digital detox encouragement.",
         ctaText: "Ready for a trip that actually leaves you feeling recharged? Join our next nature and wellness experience designed for intentional rest.",
-        ctaButton: "Show me wellness trips"
+        ctaButton: "Join a group trip with Xcursions.ng"
     },
     luxury: {
         name: "The Luxury Experience Lover",
@@ -45,7 +45,7 @@ const archetypes = {
         description: "You work hard, and when you travel, you want it to feel effortless. Beautiful hotels, seamless logistics, curated itineraries, and meals you'll think about for months — that's what you're paying for. You're not trying to rough it or prove anything. You want comfort, quality, and the kind of trip where everything just *works*. No DIY chaos. Just good vibes and great execution.",
         idealTrip: "A 6-day luxury escape to Cape Town with stays at boutique hotels, private wine tours in Stellenbosch, sunset helicopter rides, fine dining experiences, and a personal trip concierge.",
         ctaText: "Want a trip that feels as good as it looks? Join our next luxury experience — fully curated, beautifully executed, zero stress.",
-        ctaButton: "Explore luxury trips"
+        ctaButton: "Join a group trip with Xcursions.ng"
     },
     social: {
         name: "The Social Group Traveller",
@@ -54,7 +54,7 @@ const archetypes = {
         description: "You don't just want to see a new city — you want to experience it with people who get it. Group dinners, late-night conversations, shared inside jokes, spontaneous plans — that's what makes a trip unforgettable. You're open to meeting new people and you thrive in group settings. The destination matters, but honestly? The vibes and the crew matter more.",
         idealTrip: "A 5-day group adventure in Lagos with welcome dinners, beach club hangs, group excursions to art galleries and live music spots, plus plenty of time for banter and bonding.",
         ctaText: "Travel is better with the right people. Join our next group trip and meet your new favorite travel crew.",
-        ctaButton: "Join a group trip"
+        ctaButton: "Join a group trip with Xcursions.ng"
     }
 };
 
@@ -348,7 +348,6 @@ const resultScreen = document.getElementById('result-screen');
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
 const backBtn = document.getElementById('back-btn');
-const retakeBtn = document.getElementById('retake-btn');
 const shareBtn = document.getElementById('share-btn');
 
 const currentQuestionSpan = document.getElementById('current-question');
@@ -373,7 +372,7 @@ function showScreen(screen) {
     welcomeScreen.classList.remove('active');
     quizScreen.classList.remove('active');
     resultScreen.classList.remove('active');
-    
+
     setTimeout(() => {
         screen.classList.add('active');
     }, 50);
@@ -390,7 +389,7 @@ function startQuiz() {
         luxury: 0,
         social: 0
     };
-    
+
     totalQuestionsSpan.textContent = questions.length;
     showScreen(quizScreen);
     displayQuestion();
@@ -398,18 +397,18 @@ function startQuiz() {
 
 function displayQuestion() {
     const question = questions[currentQuestionIndex];
-    
+
     // Update progress
     currentQuestionSpan.textContent = currentQuestionIndex + 1;
     const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
     progressFill.style.width = `${progress}%`;
-    
+
     // Update question text
     questionText.textContent = question.text;
-    
+
     // Clear and populate options
     optionsContainer.innerHTML = '';
-    
+
     question.options.forEach((option, index) => {
         const optionCard = document.createElement('div');
         optionCard.className = 'option-card';
@@ -417,20 +416,20 @@ function displayQuestion() {
             <span class="option-label">${option.label}.</span>
             ${option.text}
         `;
-        
+
         // Check if this option was previously selected
         if (answers[currentQuestionIndex] === index) {
             optionCard.classList.add('selected');
             nextBtn.disabled = false;
         }
-        
+
         optionCard.addEventListener('click', () => selectOption(index));
         optionsContainer.appendChild(optionCard);
     });
-    
+
     // Update navigation buttons
     backBtn.style.display = currentQuestionIndex === 0 ? 'none' : 'inline-flex';
-    
+
     if (answers[currentQuestionIndex] === undefined) {
         nextBtn.disabled = true;
     }
@@ -440,13 +439,13 @@ function selectOption(optionIndex) {
     // Remove selected class from all options
     const allOptions = optionsContainer.querySelectorAll('.option-card');
     allOptions.forEach(opt => opt.classList.remove('selected'));
-    
+
     // Add selected class to clicked option
     allOptions[optionIndex].classList.add('selected');
-    
+
     // Store answer
     answers[currentQuestionIndex] = optionIndex;
-    
+
     // Enable next button
     nextBtn.disabled = false;
 }
@@ -478,35 +477,35 @@ function calculateResults() {
         luxury: 0,
         social: 0
     };
-    
+
     // Calculate scores based on answers
     answers.forEach((answerIndex, questionIndex) => {
         const question = questions[questionIndex];
         const selectedOption = question.options[answerIndex];
-        
+
         selectedOption.archetypes.forEach(archetype => {
             scores[archetype]++;
         });
     });
-    
+
     // Find the archetype with the highest score
     let winningArchetype = null;
     let highestScore = 0;
-    
+
     for (const [key, score] of Object.entries(scores)) {
         if (score > highestScore) {
             highestScore = score;
             winningArchetype = key;
         }
     }
-    
+
     // Display results
     displayResults(winningArchetype);
 }
 
 function displayResults(archetypeKey) {
     const archetype = archetypes[archetypeKey];
-    
+
     resultTitle.textContent = `You are: ${archetype.name}`;
     resultTagline.textContent = archetype.tagline;
     resultIcon.textContent = archetype.icon;
@@ -514,26 +513,28 @@ function displayResults(archetypeKey) {
     idealTripText.textContent = archetype.idealTrip;
     ctaText.textContent = archetype.ctaText;
     ctaBtn.textContent = archetype.ctaButton;
-    
+
+    // Store the result name globally for Twitter sharing
+    window.currentResultName = archetype.name;
+
     showScreen(resultScreen);
 }
 
 function shareResult() {
-    const resultName = resultTitle.textContent;
-    const shareText = `I just took the "Which Trip Fits Your Personality?" quiz and got: ${resultName}! Take the quiz to find your travel style.`;
-    
-    if (navigator.share) {
-        navigator.share({
-            title: 'My Travel Personality Quiz Result',
-            text: shareText,
-            url: window.location.href
-        }).catch(err => console.log('Error sharing:', err));
-    } else {
-        // Fallback: copy to clipboard
-        navigator.clipboard.writeText(shareText + ' ' + window.location.href)
-            .then(() => alert('Result copied to clipboard!'))
-            .catch(err => console.log('Error copying:', err));
-    }
+    // Get the current result name
+    const resultName = window.currentResultName || "My Travel Personality";
+
+    // Create the tweet text
+    const tweetText = `I just took the "Which Trip Fits Your Personality?" quiz by Xcursions.ng and my result is: ${resultName}!\nTake the test here 👉 https://xcursionquiz3.vercel.app/`;
+
+    // URL encode the tweet text
+    const encodedTweet = encodeURIComponent(tweetText);
+
+    // Create the Twitter intent URL
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodedTweet}`;
+
+    // Open Twitter in a new tab
+    window.open(twitterUrl, '_blank');
 }
 
 // ==========================================
@@ -542,12 +543,11 @@ function shareResult() {
 startBtn.addEventListener('click', startQuiz);
 nextBtn.addEventListener('click', nextQuestion);
 backBtn.addEventListener('click', previousQuestion);
-retakeBtn.addEventListener('click', startQuiz);
 shareBtn.addEventListener('click', shareResult);
 
-// CTA button click (you can customize this to link to your actual trip pages)
+// CTA button click - opens xcursions.ng in new tab
 ctaBtn.addEventListener('click', () => {
-    alert('This would take you to the trips page! Connect this to your actual booking/waitlist system.');
+    window.open('https://xcursions.ng', '_blank');
 });
 
 // ==========================================

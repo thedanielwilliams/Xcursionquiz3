@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover which trip fits your personality! Take our fun quiz to find your perfect travel style.">
+    <meta name="description"
+        content="Discover which trip fits your personality! Take our fun quiz to find your perfect travel style.">
     <meta property="og:title" content="Which Trip Fits Your Personality?">
-    <meta property="og:description" content="Take our personality quiz to discover your ideal travel style and find trips that match who you are.">
+    <meta property="og:description"
+        content="Take our personality quiz to discover your ideal travel style and find trips that match who you are.">
     <meta property="og:type" content="website">
-    
+
     <title>Which Trip Fits Your Personality? | Travel Quiz</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Welcome Screen -->
@@ -26,7 +30,8 @@
                     <div class="icon-circle">✈️</div>
                 </div>
                 <h1 class="main-title">Which Trip Fits Your Personality?</h1>
-                <p class="subtitle">Answer 10 quick questions to discover your ideal travel style and find trips designed for people like you.</p>
+                <p class="subtitle">Answer 10 quick questions to discover your ideal travel style and find trips
+                    designed for people like you.</p>
                 <button class="btn btn-primary btn-large" id="start-btn">Start Quiz</button>
                 <p class="time-estimate">⏱️ Takes about 2 minutes</p>
             </div>
@@ -37,7 +42,8 @@
             <div class="quiz-content">
                 <!-- Progress Bar -->
                 <div class="progress-container">
-                    <div class="progress-text">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+                    <div class="progress-text">Question <span id="current-question">1</span> of <span
+                            id="total-questions">10</span></div>
                     <div class="progress-bar">
                         <div class="progress-fill" id="progress-fill"></div>
                     </div>
@@ -65,7 +71,7 @@
                 <div class="result-badge">Your Result</div>
                 <h1 class="result-title" id="result-title"></h1>
                 <p class="result-tagline" id="result-tagline"></p>
-                
+
                 <div class="result-card">
                     <div class="result-icon" id="result-icon"></div>
                     <p class="result-description" id="result-description"></p>
@@ -83,8 +89,14 @@
                 </div>
 
                 <div class="secondary-actions">
-                    <button class="btn btn-outline" id="retake-btn">🔄 Retake Quiz</button>
-                    <button class="btn btn-outline" id="share-btn">📤 Share Result</button>
+                    <button class="btn btn-outline" id="share-btn" role="button"
+                        aria-label="Share your result on Twitter">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                        Share on Twitter
+                    </button>
                 </div>
             </div>
         </div>
@@ -92,4 +104,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
