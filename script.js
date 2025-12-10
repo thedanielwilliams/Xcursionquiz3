@@ -6,7 +6,7 @@ const archetypes = {
         name: "The Chill Beach Recharger",
         tagline: "You travel to unwind, not to hustle.",
         icon: "🏖️",
-        description: "You're the type who measures a good trip by how rested you feel afterwards. Slow mornings with coffee by the water, sunset views without a packed schedule, and plenty of time to just *be* — that's your sweet spot. You don't need every hour planned; you need space to breathe. A good book, warm sand, and zero FOMO is your ideal vacation state.",
+        description: "You're the type who measures a good trip by how rested you feel afterwards. Slow mornings with coffee by the water, sunset views without a packed schedule, and plenty of time to just *be*, that's your sweet spot. You don't need every hour planned; you need space to breathe. A good book, warm sand, and zero FOMO is your ideal vacation state.",
         idealTrip: "A 5-day beach escape in Zanzibar with sunset dhow cruises, snorkeling at your own pace, beachfront dinners, and plenty of unscheduled time to nap, read, or stare at the ocean.",
         ctaText: "Ready to trade your to-do list for a beach towel? Join our next slow-travel beach escape designed for people who actually want to relax.",
         ctaButton: "Join a group trip with Xcursions.ng"
@@ -15,7 +15,7 @@ const archetypes = {
         name: "The Culture City Explorer",
         tagline: "You collect stories, not souvenirs.",
         icon: "🏙️",
-        description: "You're happiest wandering through local markets, trying street food you can't pronounce, and getting lost in neighborhoods tourists skip. Museums, walking tours, late-night food spots, rooftop bars — you want to *feel* a city, not just see it. You travel to learn, taste, and connect with the heartbeat of a place. Cookie-cutter itineraries bore you; you want the real thing.",
+        description: "You're happiest wandering through local markets, trying street food you can't pronounce, and getting lost in neighborhoods tourists skip. Museums, walking tours, late-night food spots, rooftop bars, you want to *feel* a city, not just see it. You travel to learn, taste, and connect with the heartbeat of a place. Cookie-cutter itineraries bore you; you want the real thing.",
         idealTrip: "A 6-day cultural immersion in Marrakech with guided medina tours, cooking classes, traditional hammam experiences, rooftop dinners, and curated local encounters.",
         ctaText: "Want trips that go beyond the Instagram spots? Join our next city adventure built for curious explorers who care about culture, not just check-ins.",
         ctaButton: "Join a group trip with Xcursions.ng"
@@ -24,7 +24,7 @@ const archetypes = {
         name: "The Adrenaline Adventurer",
         tagline: "Comfort zones are boring. You're here for the rush.",
         icon: "⛰️",
-        description: "If it doesn't get your heart racing, it's not worth the flight. You're the first to sign up for the hike, the zip-line, the quad bike, the cliff jump. You don't mind waking up early, getting a little dirty, or feeling sore the next day — that's proof you actually *did* something. You want stories you can't get from a resort. Adventure is the whole point.",
+        description: "If it doesn't get your heart racing, it's not worth the flight. You're the first to sign up for the hike, the zip-line, the quad bike, the cliff jump. You don't mind waking up early, getting a little dirty, or feeling sore the next day, that's proof you actually *did* something. You want stories you can't get from a resort. Adventure is the whole point.",
         idealTrip: "A 7-day adrenaline-packed experience in Uganda with white-water rafting on the Nile, gorilla trekking, bungee jumping, and quad biking through rural villages.",
         ctaText: "If you're tired of boring vacations, join our next adventure trip. Real activities. Real stories. No fluff.",
         ctaButton: "Join a group trip with Xcursions.ng"
@@ -33,7 +33,7 @@ const archetypes = {
         name: "The Nature & Wellness Seeker",
         tagline: "You travel to reconnect, not escape.",
         icon: "🌿",
-        description: "Mountains over beaches. Silence over nightlife. You're looking for space to think, breathe, and reset. Whether it's yoga at sunrise, long walks through forests, or journaling by a lake, you want your trip to feel intentional. Screens off. Mind clear. You're not running from life — you're creating room to come back to it better.",
+        description: "Mountains over beaches. Silence over nightlife. You're looking for space to think, breathe, and reset. Whether it's yoga at sunrise, long walks through forests, or journaling by a lake, you want your trip to feel intentional. Screens off. Mind clear. You're not running from life, you're creating room to come back to it better.",
         idealTrip: "A 5-day wellness retreat in the Rwandan highlands with morning yoga, guided nature walks, meditation sessions, farm-to-table meals, and digital detox encouragement.",
         ctaText: "Ready for a trip that actually leaves you feeling recharged? Join our next nature and wellness experience designed for intentional rest.",
         ctaButton: "Join a group trip with Xcursions.ng"
@@ -42,16 +42,16 @@ const archetypes = {
         name: "The Luxury Experience Lover",
         tagline: "You want the experience, not the stress.",
         icon: "✨",
-        description: "You work hard, and when you travel, you want it to feel effortless. Beautiful hotels, seamless logistics, curated itineraries, and meals you'll think about for months — that's what you're paying for. You're not trying to rough it or prove anything. You want comfort, quality, and the kind of trip where everything just *works*. No DIY chaos. Just good vibes and great execution.",
+        description: "You work hard, and when you travel, you want it to feel effortless. Beautiful hotels, seamless logistics, curated itineraries, and meals you'll think about for months, that's what you're paying for. You're not trying to rough it or prove anything. You want comfort, quality, and the kind of trip where everything just *works*. No DIY chaos. Just good vibes and great execution.",
         idealTrip: "A 6-day luxury escape to Cape Town with stays at boutique hotels, private wine tours in Stellenbosch, sunset helicopter rides, fine dining experiences, and a personal trip concierge.",
-        ctaText: "Want a trip that feels as good as it looks? Join our next luxury experience — fully curated, beautifully executed, zero stress.",
+        ctaText: "Want a trip that feels as good as it looks? Join our next luxury experience, fully curated, beautifully executed, zero stress.",
         ctaButton: "Join a group trip with Xcursions.ng"
     },
     social: {
         name: "The Social Group Traveller",
         tagline: "For you, the people make the place.",
         icon: "🎉",
-        description: "You don't just want to see a new city — you want to experience it with people who get it. Group dinners, late-night conversations, shared inside jokes, spontaneous plans — that's what makes a trip unforgettable. You're open to meeting new people and you thrive in group settings. The destination matters, but honestly? The vibes and the crew matter more.",
+        description: "You don't just want to see a new city, you want to experience it with people who get it. Group dinners, late-night conversations, shared inside jokes, spontaneous plans, that's what makes a trip unforgettable. You're open to meeting new people and you thrive in group settings. The destination matters, but honestly? The vibes and the crew matter more.",
         idealTrip: "A 5-day group adventure in Lagos with welcome dinners, beach club hangs, group excursions to art galleries and live music spots, plus plenty of time for banter and bonding.",
         ctaText: "Travel is better with the right people. Join our next group trip and meet your new favorite travel crew.",
         ctaButton: "Join a group trip with Xcursions.ng"
@@ -94,7 +94,7 @@ const questions = [
         options: [
             {
                 label: "A",
-                text: "Fully planned for me — I just want to show up and enjoy.",
+                text: "Fully planned for me, I just want to show up and enjoy.",
                 archetypes: ["luxury", "social"]
             },
             {
@@ -109,7 +109,7 @@ const questions = [
             },
             {
                 label: "D",
-                text: "Honestly, I just care about the vibes and the people — I'll follow the group energy.",
+                text: "Honestly, I just care about the vibes and the people, I'll follow the group energy.",
                 archetypes: ["social"]
             }
         ]
@@ -120,22 +120,22 @@ const questions = [
         options: [
             {
                 label: "A",
-                text: "Comfort — I'd rather pay more and feel relaxed the whole time.",
+                text: "Comfort, I'd rather pay more and feel relaxed the whole time.",
                 archetypes: ["luxury", "wellness"]
             },
             {
                 label: "B",
-                text: "Balance — not too expensive, not too rough, just right.",
+                text: "Balance, not too expensive, not too rough, just right.",
                 archetypes: ["city", "beach", "social"]
             },
             {
                 label: "C",
-                text: "Experience — I can sacrifice comfort if it means a better story.",
+                text: "Experience, I can sacrifice comfort if it means a better story.",
                 archetypes: ["adventure"]
             },
             {
                 label: "D",
-                text: "Community — I care more about who I'm travelling with than where I'm going.",
+                text: "Community, I care more about who I'm travelling with than where I'm going.",
                 archetypes: ["social"]
             }
         ]
@@ -187,138 +187,8 @@ const questions = [
             },
             {
                 label: "D",
-                text: "I don't really care who — I care more about what we're doing.",
+                text: "I don't really care who, I care more about what we're doing.",
                 archetypes: ["adventure"]
-            }
-        ]
-    },
-    {
-        id: 6,
-        text: "How far out of your comfort zone are you ready to go?",
-        options: [
-            {
-                label: "A",
-                text: "Not too far — I want to feel safe, rested, and in control.",
-                archetypes: ["beach", "luxury", "wellness"]
-            },
-            {
-                label: "B",
-                text: "I'm open to new food, culture, and experiences, but nothing too extreme.",
-                archetypes: ["city"]
-            },
-            {
-                label: "C",
-                text: "Very far — I want stories I can't get from staying home.",
-                archetypes: ["adventure"]
-            },
-            {
-                label: "D",
-                text: "Depends on the group — I'll do whatever everyone else is doing.",
-                archetypes: ["social"]
-            }
-        ]
-    },
-    {
-        id: 7,
-        text: "If you had to describe the main purpose of your next trip in one word, what would it be?",
-        options: [
-            {
-                label: "A",
-                text: "Recharge",
-                archetypes: ["beach", "wellness"]
-            },
-            {
-                label: "B",
-                text: "Discover",
-                archetypes: ["city"]
-            },
-            {
-                label: "C",
-                text: "Challenge",
-                archetypes: ["adventure"]
-            },
-            {
-                label: "D",
-                text: "Connect",
-                archetypes: ["social"]
-            }
-        ]
-    },
-    {
-        id: 8,
-        text: "What pace feels right for your ideal trip?",
-        options: [
-            {
-                label: "A",
-                text: "Slow and unhurried — I want time to actually enjoy each moment.",
-                archetypes: ["beach", "wellness"]
-            },
-            {
-                label: "B",
-                text: "Active days, chill evenings — a good mix of doing and resting.",
-                archetypes: ["city", "social"]
-            },
-            {
-                label: "C",
-                text: "Full, intense days with back-to-back activities. I'll sleep when I'm home.",
-                archetypes: ["adventure"]
-            },
-            {
-                label: "D",
-                text: "A mix of everything — I just want each day to feel meaningful.",
-                archetypes: ["luxury"]
-            }
-        ]
-    },
-    {
-        id: 9,
-        text: "What's your biggest travel fear?",
-        options: [
-            {
-                label: "A",
-                text: "Feeling burnt out or overscheduled — I don't want to need a vacation from my vacation.",
-                archetypes: ["beach", "wellness"]
-            },
-            {
-                label: "B",
-                text: "Missing out on the \"real\" local experience because I stuck to tourist traps.",
-                archetypes: ["city"]
-            },
-            {
-                label: "C",
-                text: "Being bored or stuck doing nothing — I need action.",
-                archetypes: ["adventure"]
-            },
-            {
-                label: "D",
-                text: "Ending up on a trip with bad vibes or people I don't click with.",
-                archetypes: ["social", "luxury"]
-            }
-        ]
-    },
-    {
-        id: 10,
-        text: "When you look back on a great trip, what do you remember most?",
-        options: [
-            {
-                label: "A",
-                text: "How relaxed and recharged I felt — like I actually rested.",
-                archetypes: ["beach", "wellness"]
-            },
-            {
-                label: "B",
-                text: "The little moments — a random conversation, a hidden café, the way a street smelled.",
-                archetypes: ["city"]
-            },
-            {
-                label: "C",
-                text: "The wild stuff I did — the hike, the jump, the thing I was scared to try.",
-                archetypes: ["adventure"]
-            },
-            {
-                label: "D",
-                text: "The people — the laughs, the inside jokes, the group energy.",
-                archetypes: ["social", "luxury"]
             }
         ]
     }
